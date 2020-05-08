@@ -19,66 +19,46 @@ import json
 <%block name="pagetitle">${_("Dashboard")}</%block>
 <%block name="bodyclass">view-dashboard is-authenticated</%block>
 <%block name="nav_skip"></%block>
-<section class="home">
-  <header>
-    <div class="outer-wrapper">
-      <div class="title">
-       
-        % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
-          <div class="course-search">
-            <form method="get" action="/courses">
-              <label><span class="sr">${_("Search for a course")}</span>
-                <input class="search-input" name="search_query" type="text" placeholder="${_("Search for a course")}"></input>
-              </label>
-              <button class="search-button" type="submit">
-                <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
-              </button>
-            </form>
-          </div>
-        % endif
+<!--  -->
+<%block name="header_extras">
+% for template_name in ["donation"]:
+<script type="text/template" id="${template_name}-tpl">
+  <%static:include path="dashboard/${template_name}.underscore" />
+</script>
+% endfor
 
-      </div>
-
-      % if show_homepage_promo_video:
-        <a href="#video-modal" class="media" rel="leanModal">
-          <div class="hero">
-            <div class="play-intro"></div>
-          </div>
-        </a>
-      % endif
-    </div>
-
-  </header>
-  <%include file="${courses_list}" />
-
-</section>
-
-<section id="video-modal" class="modal home-page-video-modal video-modal">
-  <div class="inner-wrapper">
-    <iframe title="YouTube Video" width="640" height="360" src="//www.youtube.com/embed/${homepage_promo_video_youtube_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
-  </div>
-</section>
-
-<%block name="js_extra">
-   <script type="text/javascript">
-      $(window).load(function() {
-         if(getParameterByName('next')) {
-              $('#login').trigger("click");
-         }
-      })
-   </script>
+% for template_name in ["dashboard_search_item", "dashboard_search_results", "search_loading", "search_error"]:
+<script type="text/template" id="${template_name}-tpl">
+    <%static:include path="search/${template_name}.underscore" />
+</script>
+% endfor
 </%block>
 
-% if show_signup_immediately is not UNDEFINED:
-  ## NOTE: This won't work in production, because anonymous views are cached, so it will
-  ## show either with or without this extra js for 3 minutes at a time.
-<script type="text/javascript">
-  $(window).load(function() {$('#signup_action').trigger("click");});
-</script>
-% endif
-
-<!--  -->
-
+<%block name="js_extra">
+  <script src="${static.url('js/commerce/credit.js')}"></script>
+  <%static:js group='dashboard'/>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      edx.dashboard.legacy.init({
+        dashboard: "${reverse('dashboard')}",
+        signInUser: "${reverse('signin_user')}",
+        changeEmailSettings: "${reverse('change_email_settings')}"
+      });
+    });
+  </script>
+  % if settings.FEATURES.get('ENABLE_DASHBOARD_SEARCH'):
+    <%static:require_module module_name="js/search/dashboard/dashboard_search_factory" class_name="DashboardSearchFactory">
+        DashboardSearchFactory();
+    </%static:require_module>
+  % endif
+  % if redirect_message:
+    <%static:require_module module_name="js/views/message_banner" class_name="MessageBannerView">
+        var banner = new MessageBannerView({urgency: 'low', type: 'warning'});
+        $('#content').prepend(banner.$el);
+        banner.showMessage(${json.dumps(redirect_message)})
+    </%static:require_module>
+  % endif
+</%block>
 
 <div class="dashboard-notifications" tabindex="-1">
     %if message:
