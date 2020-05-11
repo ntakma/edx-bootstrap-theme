@@ -20,45 +20,8 @@ import json
 <%block name="bodyclass">view-dashboard is-authenticated</%block>
 <%block name="nav_skip"></%block>
 <!--  -->
-<%block name="header_extras">
-% for template_name in ["donation"]:
-<script type="text/template" id="${template_name}-tpl">
-  <%static:include path="dashboard/${template_name}.underscore" />
-</script>
-% endfor
 
-% for template_name in ["dashboard_search_item", "dashboard_search_results", "search_loading", "search_error"]:
-<script type="text/template" id="${template_name}-tpl">
-    <%static:include path="search/${template_name}.underscore" />
-</script>
-% endfor
-</%block>
 
-<%block name="js_extra">
-  <script src="${static.url('js/commerce/credit.js')}"></script>
-  <%static:js group='dashboard'/>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      edx.dashboard.legacy.init({
-        dashboard: "${reverse('dashboard')}",
-        signInUser: "${reverse('signin_user')}",
-        changeEmailSettings: "${reverse('change_email_settings')}"
-      });
-    });
-  </script>
-  % if settings.FEATURES.get('ENABLE_DASHBOARD_SEARCH'):
-    <%static:require_module module_name="js/search/dashboard/dashboard_search_factory" class_name="DashboardSearchFactory">
-        DashboardSearchFactory();
-    </%static:require_module>
-  % endif
-  % if redirect_message:
-    <%static:require_module module_name="js/views/message_banner" class_name="MessageBannerView">
-        var banner = new MessageBannerView({urgency: 'low', type: 'warning'});
-        $('#content').prepend(banner.$el);
-        banner.showMessage(${json.dumps(redirect_message)})
-    </%static:require_module>
-  % endif
-</%block>
 
 <div class="dashboard-notifications" tabindex="-1">
     %if message:
