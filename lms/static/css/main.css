@@ -33,9 +33,17 @@
     font-size: 20px;
 }
 
+.footer-dark ul a {
+    color: #0075b4;
+}
+
 .col-sm-3.col-md-3.item ul li {
     margin: 10px;
     color: black;
+}
+
+.col-sm-3.col-md-3.item {
+    border-left: #999 solid 1px;
 }
 
 .footer-dark ul a {
@@ -63,7 +71,7 @@
     font-size: 25px !important;
     line-height: 37px !important;
     text-align: center;
-    color: #ff0202 !important;
+    color: #1c75b4 !important;
 }
 
 .footer-dark ul {
