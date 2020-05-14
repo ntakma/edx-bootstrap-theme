@@ -56,6 +56,12 @@
     color: black;
 }
 
+.main-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .col-sm-3.col-md-3.item {
     border-left: #999 solid 1px;
 }
