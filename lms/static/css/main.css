@@ -64,8 +64,6 @@
 
 .footer {
     background: none repeat scroll 0 0 #FFFBFB;
-    border-top: 5px solid #C52D2F;
-    height: 84px;
     margin-top: 110px;
     height: 222px;
 }
@@ -1694,13 +1692,6 @@ ul.social_icons li a i {
 .clients-comments h4 span {
     font-weight: 700;
     font-style: oblique;
-}
-
-.footer {
-    background: none repeat scroll 0 0 #2E2E2E;
-    border-top: 5px solid #C52D2F;
-    height: 84px;
-    margin-top: 110px;
 }
 
 .footer_left {
