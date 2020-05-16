@@ -80,12 +80,62 @@
     height: 222px;
 }
 
+.our-partners.col-sm-6.col-md-6 {
+    max-width: 600px;
+    margin-right: auto;
+}
+
+.section-content.col-sm-6.col-md-6 {
+    float: left;
+    max-width: 600px;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    max-width: none;
+    background-image: url("https://www.edx.org/sites/all/themes/atedx/images/backgrounds/world-map-lg.png");
+}
+
 .col-sm-3.col-md-3.item {
     border-left: #999 solid 1px;
 }
 
+.section-title {
+    font-size: 2rem;
+    margin: 24px 2px;
+}
+
+#about-edx {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #414141;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.main-header {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+}
+
 .col-sm-3.col-md-3.item.brand {
     border-left: #999 solid 0px;
+}
+
+.about-datademy {
+    font-size: 2.5rem;
+    float: left;
+    max-width: 1200px;
+    margin: ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .footer-dark ul a {
