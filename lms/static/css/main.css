@@ -14,20 +14,19 @@
     width: 100%;
 }
 
+
 /* about datademy */
+
 .row.section-content {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .section-content {
     padding-bottom: 20px;
 }
-.region-column-wrapper {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .section-content.col-sm-6.col-md-6 {
     float: left;
     max-width: 600px;
@@ -75,12 +74,6 @@
     color: black;
 }
 
-.main-container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .footer {
     background: none repeat scroll 0 0 #FFFBFB;
     margin-top: 110px;
@@ -118,6 +111,43 @@
   transition: all 0.1s linear 0s;
 } */
 
+.the-mission {
+    color: #fff;
+    background-color: #f5f5f5;
+    background-image: url("https://www.edx.org/sites/all/themes/atedx/images/backgrounds/globe-sm.jpg");
+    background-position-y: center;
+    padding-left: calc((100% - 1160px) / 2);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 30px;
+    border: 1px solid #dadada;
+    border-bottom-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-width: 0;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accordion-header>h4 {
+    color: white;
+    font-size: 28px;
+    margin-top: 21px;
+}
+
+.mission-list li {
+    margin-bottom: 14px;
+}
+
+.mission-list {
+    list-style: none;
+    font-size: 1.25rem;
+    margin-bottom: ;
+}
+
 .footer-dark .item.social>a {
     font-size: 25px !important;
     line-height: 37px !important;
@@ -130,6 +160,10 @@
     line-height: 1;
     font-size: 14px;
     margin-top: 12px;
+}
+
+ul {
+    list-style: none;
 }
 
 .footer-dark .item.social>a {
