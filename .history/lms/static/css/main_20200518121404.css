@@ -71,7 +71,10 @@
 .accordion-header {
     margin-top: 45px;
 }
-
+.accordion-title {
+    font-size: 1.7rem;
+    color: white;
+}
 .about-datademy {
     font-size: 2rem;
     margin: 20px 0px;
@@ -167,11 +170,7 @@ section.outside-app h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.page-title {
-    font-size: 2rem;
-    height: 39px;
-    background-color: #fbfbf4;
-}
+
 /*************************
 *******Typography******
 **************************/
@@ -532,10 +531,7 @@ input.search-form:hover {
 #main-slider {
     position: relative;
 }
-.accordion-title {
-    font-size: 1.7rem;
-    color: white;
-}
+
 .no-margin {
     margin: 0;
     padding: 0;
@@ -936,10 +932,6 @@ input.search-form:hover {
 
 .accordion h2 {
     margin-bottom: 25px;
-}
-.accordion-header {
-    margin-top: 45px;
-    margin-left: 68px;
 }
 
 .panel-default {
