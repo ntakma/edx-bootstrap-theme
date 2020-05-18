@@ -1697,14 +1697,7 @@ ul.social_icons li a i {
 .footer_left {
     padding: 10px;
 }
-.about-edx {
-    background-image: url("https://www.edx.org/sites/all/themes/atedx/images/backgrounds/world-map-lg.png");
-    max-width: none;
-}
-.container.about > nav, section.about.outside-app > nav, .view-profile .profile-self .wrapper-profile-field-account-privacy .about.u-field-account_privacy > nav, .view-profile .about.wrapper-profile-sections > nav, .view-profile .about.badge-set-display > nav {
-    text-align: center;
-    width: 100%;
-}
+
 .text-left {
     color: #FFFFFF;
     font-size: 12px;
