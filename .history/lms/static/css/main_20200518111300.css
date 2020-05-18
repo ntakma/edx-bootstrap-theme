@@ -53,17 +53,8 @@
 .container.about, section.about.outside-app, .view-profile .profile-self .wrapper-profile-field-account-privacy .about.u-field-account_privacy, .view-profile .about.wrapper-profile-sections, .view-profile .about.badge-set-display {
     padding: 0px;
 
-.about-edx > h2, section-title > h4 {
+.about-edx > h2 {
     font-size: 2rem;
-}
-.mission-list {
-    font-size: 1.25rem;
-    list-style: none;
-    line-height: 37px;
-    padding-left: 40px;
-}
-.content-wrapper {
-    padding: 0px;
 }
 .mission-list > li {
     margin-top: 10px;
