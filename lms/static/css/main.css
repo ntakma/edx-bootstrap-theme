@@ -2915,3 +2915,7 @@ header.global .primary>a {
 .dashboard {
     padding: 40px 22px 20px 22px;
 }
+
+.col-sm-3.col-md-3.item.brand {
+    border-left: 1px;
+}
