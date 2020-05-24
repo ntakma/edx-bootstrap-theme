@@ -2934,10 +2934,7 @@ header.global .primary>a {
 }
 
 .courses-container .courses .course {
-    box-sizing: border-box;
-    transition: all 0.125s linear 0s;
-    position: relative;
-    width: 100%;
+    border-bottom: 3px solid #080;
 }
 
 .col-sm-3.col-md-3.item.brand {
