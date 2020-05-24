@@ -2916,6 +2916,30 @@ header.global .primary>a {
     padding: 40px 22px 20px 22px;
 }
 
+.courses-container .courses .course .course-image .cover-image .learn-more {
+    left: calc(50% - 100px);
+    box-sizing: border-box;
+    position: absolute;
+    top: 55px;
+    padding: 0 20px;
+    width: 200px;
+    height: 50px;
+    border-color: #080;
+    border-radius: 3px;
+    background: #080;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    text-transform: none;
+}
+
+.courses-container .courses .course {
+    box-sizing: border-box;
+    transition: all 0.125s linear 0s;
+    position: relative;
+    width: 100%;
+}
+
 .col-sm-3.col-md-3.item.brand {
     border-left: 1px;
 }
