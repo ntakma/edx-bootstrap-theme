@@ -2884,11 +2884,6 @@ header.global .primary>a {
     box-shadow: none;
 }
 
-.row {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
 #content section .container {
     width: 100%;
     min-width: 100%;
