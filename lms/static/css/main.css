@@ -2235,7 +2235,7 @@ textarea#message {
     margin-right: auto;
 }
 
-.row .footer-row {
+.row.footer-row {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -2902,6 +2902,10 @@ header.global .primary>a {
 
 #bottom h3 {
     padding: 0px 35px;
+}
+
+.courses-container .courses {
+    float: initial;
 }
 
 .content-wrapper {
