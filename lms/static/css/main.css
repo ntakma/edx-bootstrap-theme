@@ -52,6 +52,7 @@
     border-left: #999 solid 1px;
     max-width: 300px;
 }
+
 .global-header .nav-links .secondary .btn {
     border: 1px solid #04a7ff !important;
     padding: 5px 20px;
@@ -60,17 +61,21 @@
     text-decoration: none;
     border-radius: 25px;
 }
-.global-header .nav-links .secondary a.sign-in-btn, .global-header .nav-links .secondary .nav-item a.shopping-cart {
+
+.global-header .nav-links .secondary a.sign-in-btn,
+.global-header .nav-links .secondary .nav-item a.shopping-cart {
     background-color: #02c1fb;
     color: #fff;
     border: 1px solid #000406;
     font-weight: 400;
     padding: 5px 20px;
 }
+
 .global-header .nav-links .secondary a.register-btn:hover {
     background-color: #02c1fb !important;
     color: #fff;
 }
+
 .global-header .nav-links .secondary .btn {
     border: 1px solid #000406;
     padding: 5px 20px;
@@ -78,16 +83,19 @@
     cursor: pointer;
     text-decoration: none;
 }
+
 .global-header .nav-links .secondary a.register-btn {
     background: #fff;
     color: #0075b4;
     font-weight: 400;
 }
+
 .footer-dark ul a {
     text-decoration: none;
     opacity: 1;
     font-size: 18px;
 }
+
 .footer-dark .copyright {
     text-align: center;
     padding-top: 24px;
@@ -95,23 +103,32 @@
     font-size: 13px;
     margin-bottom: 0;
 }
+
 .footer-dark {
     padding: 0 !important;
     color: #000;
-    background-color:#fffdfd !important;
+    background-color: #fffdfd !important;
 }
-.container.about, section.about.outside-app, .view-profile .profile-self .wrapper-profile-field-account-privacy .about.u-field-account_privacy, .view-profile .about.wrapper-profile-sections, .view-profile .about.badge-set-display {
+
+.container.about,
+section.about.outside-app,
+.view-profile .profile-self .wrapper-profile-field-account-privacy .about.u-field-account_privacy,
+.view-profile .about.wrapper-profile-sections,
+.view-profile .about.badge-set-display {
     padding: 0px;
 }
+
 .container.about {
     margin: 0px;
     max-width: 1500px;
 }
+
 .mission-list {
     list-style: none;
     font-size: 1.25rem;
     line-height: 40px;
 }
+
 .accordion-header {
     margin-top: 45px;
 }
@@ -120,13 +137,17 @@
     font-size: 2rem;
     margin: 20px 0px;
 }
+
 .section-p {
     font-size: 0.9rem;
     color: black;
 }
+
 .section-title {
     font-size: 1.75rem;
 }
+
+
 /* a:not(.btn), a:visited:not(.btn) {
   color: #000 !important;
   font: bolder;
@@ -211,11 +232,14 @@ section.outside-app h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .page-title {
     font-size: 2rem;
     height: 39px;
     background-color: #fbfbf4;
 }
+
+
 /*************************
 *******Typography******
 **************************/
@@ -576,10 +600,12 @@ input.search-form:hover {
 #main-slider {
     position: relative;
 }
+
 .accordion-title {
     font-size: 1.7rem;
     color: white;
 }
+
 .no-margin {
     margin: 0;
     padding: 0;
@@ -981,6 +1007,7 @@ input.search-form:hover {
 .accordion h2 {
     margin-bottom: 25px;
 }
+
 .accordion-header {
     margin-top: 45px;
     margin-left: 68px;
@@ -1761,14 +1788,21 @@ ul.social_icons li a i {
 .footer_left {
     padding: 10px;
 }
+
 .about-edx {
     background-image: url("https://www.edx.org/sites/all/themes/atedx/images/backgrounds/world-map-lg.png");
     max-width: none;
 }
-.container.about > nav, section.about.outside-app > nav, .view-profile .profile-self .wrapper-profile-field-account-privacy .about.u-field-account_privacy > nav, .view-profile .about.wrapper-profile-sections > nav, .view-profile .about.badge-set-display > nav {
+
+.container.about>nav,
+section.about.outside-app>nav,
+.view-profile .profile-self .wrapper-profile-field-account-privacy .about.u-field-account_privacy>nav,
+.view-profile .about.wrapper-profile-sections>nav,
+.view-profile .about.badge-set-display>nav {
     text-align: center;
     width: 100%;
 }
+
 .text-left {
     color: #FFFFFF;
     font-size: 12px;
@@ -2187,15 +2221,31 @@ ul.social_icons li a i {
     border-color: #f2f2f2;
     box-shadow: none;
 }
+
 .courses-container .courses .courses-listing .courses-listing-item {
     margin: 0 0 100px 0;
-        margin-right: 0px;
-        margin-bottom: 100px;
+    margin-right: 0px;
+    margin-bottom: 100px;
     max-height: 360px;
 }
+
 textarea#message {
     resize: none;
     padding: 10px;
+}
+
+.courses-container .courses {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row.footer-row {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .verified-flag {
@@ -2203,6 +2253,7 @@ textarea#message {
     border-style: unset;
     margin-top: -5px;
 }
+
 #contact-page .contact-wrap {
     margin-top: 20px;
 }
@@ -2840,11 +2891,6 @@ header.global .primary>a {
     box-shadow: none;
 }
 
-.row {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
 #content section .container {
     width: 100%;
     min-width: 100%;
@@ -2865,10 +2911,39 @@ header.global .primary>a {
     padding: 0px 35px;
 }
 
+.courses-container .courses {
+    float: initial;
+}
+
 .content-wrapper {
     min-height: 460px;
 }
 
 .dashboard {
     padding: 40px 22px 20px 22px;
+}
+
+.courses-container .courses .course .course-image .cover-image .learn-more {
+    left: calc(50% - 100px);
+    box-sizing: border-box;
+    position: absolute;
+    top: 55px;
+    padding: 0 20px;
+    width: 200px;
+    height: 50px;
+    border-color: #080;
+    border-radius: 3px;
+    background: #080;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    text-transform: none;
+}
+
+.courses-container .courses .course {
+    border-bottom: 3px solid #080;
+}
+
+.col-sm-3.col-md-3.item.brand {
+    border-left: 1px;
 }
