@@ -2126,7 +2126,14 @@ section.about.outside-app>nav,
     width: 0;
     z-index: -1;
 }
+img.originzationlogo {
+    max-width: 60%;
+}
 
+.wrapper-footer footer#footer-openedx .colophon .nav-colophon {
+    margin: 5px 0 30px 0;
+    font-size: 1.4rem;
+}
 .pricing-area .plan-action .btn-primary:after {
     border-color: #E24F43 transparent transparent;
     border-radius: 5px 0 0 0;
